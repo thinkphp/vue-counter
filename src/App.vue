@@ -1,7 +1,7 @@
 <script>
   export default {
     data: () => ({
-      contador: 10
+      contador: 0
     }),
     methods: {
       incrementar(){
