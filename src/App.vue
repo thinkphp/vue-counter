@@ -27,15 +27,16 @@
 <template>
   <div class="container">
     <img src="./assets/logo.svg" alt="Vue logo" width="125" height="125">
-    <small><h1>Hello World from Vue.js 3!</h1></small>
+    <small><h1>Vue.js 3</h1></small>
     <hr>
     <h2 :style="{ color: counterColor }">Counter: {{ counter }}</h2>
     <div class="buttons">
-      <button @click="increment()">+1</button>
-      <button @click="decrement()">-1</button>
+      <button @click="increment()">increase</button>
+      <button @click="decrement()">decrease</button>
       <button @click="reset()">Reset</button>
     </div>
   </div>
+  <p>&copy;  2025 <a href="http://thinkphp.it">Adrian Statescu</a></p>
 </template>
 
 <style scoped>
@@ -88,5 +89,7 @@ button:active {
   background-color: #003c82;
   transform: scale(1);
 }
+p{color: blue; margin-left: 700px; color: black}
+p a{text-decoration: none; color: green}
 </style>
 
